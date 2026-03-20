@@ -1,0 +1,66 @@
+{
+    // --- Editor ---
+    "editor.wordWrap": "on",
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "workbench.editor.enablePreview": false,
+    "files.trimFinalNewlines": true,
+
+    // --- Theme & Icons ---
+    "workbench.colorTheme": "Atom One Dark",
+    "workbench.iconTheme": "material-icon-theme",
+    "material-icon-theme.folders.associations": {
+        "venv": "environment",
+        "references": "docs",
+        "modeling": "generator"
+    },
+
+    // --- Terminal ---
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "path": "C:\\Program Files\\Git\\bin\\bash.exe",
+            "args": ["--login", "-i"]
+        }
+    },
+
+    // --- Python ---
+    "python.defaultInterpreterPath": "${workspaceFolder}/.venv/Scripts/python.exe",
+
+    // --- Jupyter ---
+    "jupyter.interactiveWindow.textEditor.executeSelection": true,
+
+    // --- Git ---
+    "git.autofetch": true,
+
+    // --- Copilot ---
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "python": true
+    },
+
+    // --- Telemetry ---
+    "telemetry.telemetryLevel": "off",
+
+    // --- Misc ---
+    "workbench.editor.empty.hint": "hidden",
+    "chat.mcp.autostart": "never",
+    "chat.viewSessions.orientation": "stacked"
+}
